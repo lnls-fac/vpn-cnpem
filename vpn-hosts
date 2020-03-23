@@ -1,5 +1,9 @@
+
+# Useful hosts for VPN Connection
 10.0.7.55  vpn-lnls350-linux
 10.0.38.51 vpn-ximenes
 10.0.38.48 vpn-murilo
-10.0.38.50 vpn-ana
-10.0.38.67 vpn-fernando
+10.0.38.36 vpn-lnls449-linux
+10.0.38.41 vpn-lnls451-linux
+10.0.38.38 vpn-lnls454-linux
+10.0.38.47 vpn-lnls452-linux
