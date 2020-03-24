@@ -24,7 +24,9 @@ install-files:
 
 update-hosts:
 	@echo "--- UPDATE HOSTS ---"
-	sudo cat /etc/hosts ./vpn-hosts >> ./hosts
+	rm -rf ./hosts
+	cat /etc/hosts | grep -v "vpn\-" | grep -V "VPN" > ./hosts
+	cat ./vpn-hosts >> ./hosts
 	sudo cp ./hosts /etc/hosts
 	rm -rf ./hosts
 	@echo ""
