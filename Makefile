@@ -1,10 +1,3 @@
-
-
-
-$(info --- USER INPUT ---)
-CNPEM_USERNAME := $(shell ./user-input.sh)
-$(info )
-
 install: install-packages install-files update-hosts update-bashrc readme
 
 
@@ -16,6 +9,7 @@ install-packages:
 
 install-files:
 	@echo "--- INSTALLING FILES ---"
+	@CNPEM_USERNAME=$(shell ./user-input.sh)
 	mkdir -p ~/bin
 	cat ./vpn-cnpem | sed "s/<USERNAME>/"$(CNPEM_USERNAME)"/g" > ~/bin/vpn-cnpem
 	chmod o-r ~/bin/vpn-cnpem
@@ -24,7 +18,9 @@ install-files:
 
 update-hosts:
 	@echo "--- UPDATE HOSTS ---"
-	sudo cat /etc/hosts ./vpn-hosts >> ./hosts
+	rm -rf ./hosts
+	cat /etc/hosts | grep -v "vpn\-" | grep -V "VPN" > ./hosts
+	cat ./vpn-hosts >> ./hosts
 	sudo cp ./hosts /etc/hosts
 	rm -rf ./hosts
 	@echo ""
