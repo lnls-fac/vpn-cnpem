@@ -8,5 +8,5 @@
 10.0.38.38 vpn-lnls454-linux
 10.0.38.47 vpn-lnls452-linux
 10.0.38.83 vpn-lnlsfac-srv1
-10.0.38.43 linac-opi1
-10.0.38.70 linac-opi2	
+10.0.38.43 vpn-linac-opi1
+10.0.38.70 vpn-linac-opi2	
