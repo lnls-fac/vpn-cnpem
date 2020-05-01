@@ -7,3 +7,4 @@
 export EPICS_CA_ADDR_LIST="10.0.38.46:60000 10.0.38.59:60000"
 export SIRIUS_URL_CONSTS=http://10.0.38.42/control-system-constants
 export SIRIUS_URL_CONFIGDB=http://10.0.38.42/config-db
+export SIRIUS_URL_ARCHIVER=https://10.0.38.42
