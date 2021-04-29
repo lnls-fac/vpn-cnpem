@@ -10,10 +10,10 @@
 10.0.38.20  vpn-lnls209-linux
 10.0.38.83  vpn-lnlsfac-srv1
 10.0.38.48  vpn-lnlsfac-srv2
-10.20.31.42 vpn-linac-opi1
+10.20.31.22 vpn-linac-opi1
 10.0.38.70  vpn-linac-opi2
 10.0.38.79  vpn-fac-testes-la
 10.0.38.27  vpn-fac-testes-ca
 10.20.31.28 vpn-lnls350-linux
-10.20.31.31 vpn-optiplex-7070-sc-1
-10.20.31.44 vpn-optiplex-7070-sc-2
+10.20.31.32 vpn-optiplex-7070-sc-1
+10.20.31.16 vpn-optiplex-7070-sc-2
