@@ -2,18 +2,18 @@
 # Useful hosts for VPN Connection
 10.20.31.21 vpn-ximenes
 10.0.38.48  vpn-murilo
-10.20.31.38 vpn-lnls449-linux
-10.20.36.22 vpn-lnls451-linux
-10.0.38.47  vpn-lnls452-linux
-10.20.31.36 vpn-lnls454-linux
-10.20.36.16 vpn-lnls455-linux
+10.20.31.38 vpn-lnls449-linux  control-room-front-left
+10.20.36.22 vpn-lnls451-linux  control-room-front-center
+10.0.38.47  vpn-lnls452-linux  control-room-old-tvs
+10.20.31.36 vpn-lnls454-linux  control-room-front-right
+10.20.36.16 vpn-lnls455-linux  control-room-tvs
 10.0.38.20  vpn-lnls209-linux
 10.0.38.83  vpn-lnlsfac-srv1
 10.0.38.48  vpn-lnlsfac-srv2
-10.20.31.22 vpn-linac-opi1
+10.20.31.22 vpn-linac-opi1  control-room-middle-right
 10.0.38.70  vpn-linac-opi2
 10.0.38.79  vpn-fac-testes-la
 10.0.38.27  vpn-fac-testes-ca
 10.20.31.28 vpn-lnls350-linux
-10.20.31.32 vpn-optiplex-7070-sc-1
-10.20.31.16 vpn-optiplex-7070-sc-2
+10.20.31.32 vpn-optiplex-7070-sc-1  control-room-middle-left
+10.20.31.16 vpn-optiplex-7070-sc-2  control-room-middle-center
