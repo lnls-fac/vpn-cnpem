@@ -2,7 +2,7 @@ install: install-packages install-files update-hosts update-bashrc readme
 
 install-packages:
 	@echo "--- INSTALLING OPENFORTVPN ---"
-	sudo dpkg -i openfortivpn_1.8.1-1_amd64.deb
+	sudo dpkg -i openfortivpn_1.15.0-1_amd64.deb
 	sudo apt-get install -f
 	@echo ""
 
