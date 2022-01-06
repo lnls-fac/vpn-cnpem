@@ -1,17 +1,16 @@
 install: install-packages install-files update-hosts update-bashrc readme
 
-
 install-packages:
 	@echo "--- INSTALLING OPENFORTVPN ---"
-	sudo dpkg -i openfortivpn_1.8.1-1_amd64.deb
+	sudo dpkg -i openfortivpn_1.15.0-1_amd64.deb
 	sudo apt-get install -f
 	@echo ""
 
 install-files:
 	@echo "--- INSTALLING FILES ---"
-	@CNPEM_USERNAME=$(shell ./user-input.sh)
-	mkdir -p ~/bin
-	cat ./vpn-cnpem | sed "s/<USERNAME>/"$(CNPEM_USERNAME)"/g" > ~/bin/vpn-cnpem
+	read -r -p "CNPEM username: " CNPEM_USERNAME; \
+	mkdir -p ~/bin; \
+	cat ./vpn-cnpem | sed "s/<USERNAME>/"$$CNPEM_USERNAME"/g" > ~/bin/vpn-cnpem; \
 	chmod o-r ~/bin/vpn-cnpem
 	cp -f ./vpn-start.sh ~/bin/
 	@echo ""
